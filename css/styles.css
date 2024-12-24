@@ -44,19 +44,19 @@ action-buttons {
 }
 
 .info {
-    margin-top: 60px; /* Adds space between the header image and the company name */
+    margin-top: 60px !important;
     text-align: left; /* Keeps the text aligned to the left as previously adjusted */
     margin-left: 15px; /* Ensures alignment consistency */
 }
 
 .info h1 {
     font-size: 1.5em;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .info p {
     font-size: 1em;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .posts {
