@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    position: relative;
+    position: relative; /* Ensures child elements are positioned relative to the header */
 }
 
 .header-image {
@@ -30,13 +30,13 @@ header {
 
 .profile-image {
     position: absolute;
-    bottom: -30px; /* Moves image down slightly */
-    right: 15px; /* Aligns image to the bottom right */
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 3px solid var(--light-background);
-    background-color: var(--light-background);
+    bottom: -20px; /* Moves the image slightly down to overlap the header */
+    left: 15px; /* Positions the image on the bottom-left of the header */
+    width: 80px; /* Increases the size of the profile image */
+    height: 80px;
+    border-radius: 50%; /* Keeps the circular shape */
+    border: 3px solid var(--light-background); /* Adds a white border */
+    background-color: var(--light-background); /* Ensures background matches header */
 }
 
 .action-buttons {
