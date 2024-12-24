@@ -30,8 +30,8 @@ header {
 
 .profile-image {
     position: absolute;
-    bottom: -30px;
-    left: 15px;
+    bottom: -30px; /* Moves image down slightly */
+    right: 15px; /* Aligns image to the bottom right */
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -45,34 +45,32 @@ header {
     padding: 15px;
 }
 
-.circle-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--light-gray);
-    margin-right: 10px;
-}
-
 .message-button {
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
     background-color: var(--light-gray);
     cursor: pointer;
+    margin-left: auto; /* Aligns button to the right */
 }
 
 .info {
-    text-align: center;
-    margin-top: 30px;
+    text-align: left; /* Aligns text to the left */
+    margin-left: 15px;
 }
 
 .info h1 {
     font-size: 1.5em;
+    margin: 5px 0;
 }
 
 .info p {
     font-size: 1em;
     margin: 5px 0;
+}
+
+.posts {
+    margin-top: 20px;
 }
 
 .post {
@@ -86,23 +84,19 @@ header {
 
 .post-header {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.post .profile-image {
-    width: 40px;
-    height: 40px;
+    align-items: flex-start; /* Aligns heading and profile image to start */
+    gap: 10px;
 }
 
 .post-header h2 {
-    margin-left: 10px;
-    font-size: 1em;
+    font-size: 1.2em;
+    margin: 0;
 }
 
 .post-content {
-    font-size: 1em;
-    margin: 10px 0;
+    font-size: 18px; /* Larger font for readability */
+    line-height: 1.6; /* Improved spacing between lines */
+    margin: 15px 0; /* Spacing around the content */
 }
 
 .post-image {
