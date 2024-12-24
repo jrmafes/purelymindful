@@ -44,8 +44,9 @@ action-buttons {
 }
 
 .info {
-    text-align: left; /* Aligns text to the left */
-    margin-left: 15px;
+    margin-top: 30px; /* Adds space between the header image and the company name */
+    text-align: left; /* Keeps the text aligned to the left as previously adjusted */
+    margin-left: 15px; /* Ensures alignment consistency */
 }
 
 .info h1 {
