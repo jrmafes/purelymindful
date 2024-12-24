@@ -44,19 +44,19 @@ action-buttons {
 }
 
 .info {
-    margin-top: 60px !important;
-    text-align: left; /* Keeps the text aligned to the left as previously adjusted */
-    margin-left: 15px; /* Ensures alignment consistency */
+    margin-top: 80px !important; /* Increased vertical spacing below the header */
+    text-align: left;
+    padding-left: 20px; /* Adds more consistent left alignment */
 }
 
 .info h1 {
-    font-size: 1.5em;
-    margin: 10px 0;
+    font-size: 2em; /* Slightly larger font size for emphasis */
+    margin: 15px 0; /* More vertical spacing around the company name */
 }
 
 .info p {
-    font-size: 1em;
-    margin: 10px 0;
+    font-size: 1.2em; /* Slightly larger font size for better readability */
+    margin: 15px 0; /* More vertical spacing around the slogan */
 }
 
 .posts {
