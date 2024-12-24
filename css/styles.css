@@ -1,0 +1,112 @@
+:root {
+    --light-background: #ffffff;
+    --dark-background: #000000;
+    --text-color: #333333;
+    --light-gray: #e0e0e0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-background);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-background);
+        color: #ffffff;
+    }
+}
+
+header {
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+.profile-image {
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--light-background);
+    background-color: var(--light-background);
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.circle-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    margin-right: 10px;
+}
+
+.message-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--light-gray);
+    cursor: pointer;
+}
+
+.info {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.info h1 {
+    font-size: 1.5em;
+}
+
+.info p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.post {
+    border-top: 1px solid var(--light-gray);
+    padding: 15px;
+}
+
+.post:first-child {
+    border-top: none;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post .profile-image {
+    width: 40px;
+    height: 40px;
+}
+
+.post-header h2 {
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+.post-content {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
