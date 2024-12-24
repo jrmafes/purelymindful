@@ -31,10 +31,11 @@ header {
 }
 
 .action-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Moves the "Message" button to the right */
-    padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid red; /* debugging */
 }
 
 .message-button {
