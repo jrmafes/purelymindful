@@ -30,7 +30,7 @@ header {
     margin-bottom: 15px; /* adjust as needed for larger spacing */
 }
 
-action-buttons {
+.action-buttons {
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Moves the "Message" button to the right */
