@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    position: relative; /* Ensures child elements are positioned relative to the header */
+    position: relative; /* Ensures profile image is positioned relative to the header */
 }
 
 .header-image {
@@ -28,10 +28,13 @@ header {
     height: auto;
 }
 
-.profile-image {
+.profile-container {
     position: absolute;
-    bottom: -20px; /* Moves the image slightly down to overlap the header */
-    left: 15px; /* Positions the image on the bottom-left of the header */
+    bottom: -20px; /* Places the profile image slightly below the header */
+    left: 15px; /* Aligns to the bottom-left corner of the header */
+}
+
+.profile-image {
     width: 80px; /* Increases the size of the profile image */
     height: 80px;
     border-radius: 50%; /* Keeps the circular shape */
@@ -42,6 +45,7 @@ header {
 .action-buttons {
     display: flex;
     align-items: center;
+    justify-content: flex-end; /* Moves the "Message" button to the right */
     padding: 15px;
 }
 
@@ -51,7 +55,6 @@ header {
     border: none;
     background-color: var(--light-gray);
     cursor: pointer;
-    margin-left: auto; /* Aligns button to the right */
 }
 
 .info {
