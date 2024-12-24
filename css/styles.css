@@ -26,6 +26,8 @@ header {
 .header-image {
     width: 100%;
     height: auto;
+    display: block;      /* ensures it's treated as a block (no whitespace below like inline elements) */
+    margin-bottom: 15px; /* adjust as needed for larger spacing */
 }
 
 action-buttons {
