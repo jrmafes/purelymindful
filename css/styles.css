@@ -1,81 +1,75 @@
-:root {
-    --light-background: #ffffff;
-    --dark-background: #000000;
-    --text-color: #333333;
-    --light-gray: #e0e0e0;
-}
-
+/* Basic styling for the page background */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: var(--text-color);
-    background-color: var(--light-background);
+    background-color: lightblue;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--dark-background);
-        color: #ffffff;
+/* Style for the layout wrapper */
+#layout-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Add this immediately below */
+#image-container {
+    position: relative; /* Allows absolute positioning for profile image */
+    height: 150px; /* Adjust this based on your banner image height */
+}
+
+#banner-image {
+    width: 800px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+}
+
+/* Style for each section */
+#left-sidebar, #center-content, #right-sidebar {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Left Sidebar */
+#left-sidebar {
+    flex: 1; /* Adjust width proportionally */
+    background-color: #d1e7dd; /* Light green */
+}
+
+/* Center Content */
+#center-content {
+    display: flex; /* Aligns contents if needed */
+    flex-direction: column; /* Keeps elements stacked vertically */
+    align-items: center; /* Centers child elements horizontally */
+    height: auto; /* Automatically adjusts to fit its contents */
+    padding: 20px; /* Add some spacing */
+}
+
+/* Right Sidebar */
+#right-sidebar {
+    flex: 1; /* Adjust width proportionally */
+    background-color: #f8d7da; /* Light red */
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+    #left-sidebar, #right-sidebar {
+        display: none; /* Hide sidebars */
+    }
+
+    #center-content {
+        flex: 1; /* Take full width */
     }
 }
-
-header {
-    position: relative;
-}
-
-.header-image {
-    width: 100%;
-    height: auto;
-}
-
-.info {
-    margin-top: 80px !important;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.info h1 {
-    font-size: 2em;
-    margin: 15px 0;
-}
-
-.info p {
-    font-size: 1.2em;
-    margin: 15px 0;
-}
-
-.posts {
-    margin-top: 20px;
-}
-
-.post {
-    border-top: 1px solid var(--light-gray);
-    padding: 15px;
-}
-
-.post:first-child {
-    border-top: none;
-}
-
-.post-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.post-header h2 {
-    font-size: 1.2em;
-    margin: 0;
-}
-
-.post-content {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 15px 0;
-}
-
-.post-image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+/* Style for the Profile Image */
+#profile-image {
+    width: 100px; /* Fixed size */
+    height: 100px; /* Same as width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    position: absolute; /* Allows it to overlap the banner */
+    bottom: -50px; /* Pushes half of the image down below the banner */
+    left: 8.5%; /* Centers the profile image horizontally */
+    transform: none; /* Removes centering adjustment */
+    border: 3px solid white; /* Optional: Adds a border for better visual contrast */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
 }
